@@ -6,32 +6,25 @@
     <script type="text/javascript" src="js/sheetsee.js"></script>
     <script type="text/javascript" src="js/socialbits.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Hello World</title>
+    <title>Hello, Internet!</title>
   </head>
   <body>
-    <!-- HTML -->
     <div class="container">
       <header>
-        <h1>Hello</h1>
-        <h3>I am this person I do these things.</h3>
-        <!-- <ul class="inline-list meta">
-          <li><a href="" target="_blank">Twitter</a></li>
-          <li><a href="" target="_blank">Instagram</a></li>
-          <li><a href="" target="_blank">Facebook</a></li>
-        </ul> -->
+        <h1>Hey!</h1>
+        <h3>I am Manoz and I do these things on The Internet.</h3>
       </header>
-      <h3><a href="" target="_blank">twitter/jllord</a></h3>
+      <h3><a href="https://www.twitter.com/Manoz" target="_blank">twitter/Manoz</a></h3>
       <article id="tweet"><span class="load flash animated">LOADING...</span></article>
-      <h3><a href="" target="_blank">instagram/jlord</a></h3>
-      <article id="instagram"><span class="load flash animated">LOADING...</span></article>
+      <!-- <h3><a href="" target="_blank">instagram/manoz_</a></h3>
+      <article id="instagram"><span class="load flash animated">LOADING...</span></article> -->
     </div>
 
-    <!-- Templates -->
-    <script id="instagram" type="text/html">
+    <!-- <script id="instagram" type="text/html">
       {{#rows}}
         <div class="one-gram"><img src="{{instasource}}" width="200"></div>
       {{/rows}}
-    </script>
+    </script> -->
 
     <script id="tweet" type="text/html">
       {{#rows}}
@@ -40,13 +33,12 @@
       {{/rows}}
     </script>
 
-    <!-- JavaScript -->
       <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
           var URL  = '0Ao5u1U6KYND7dG9CRWdjeVB6dGYyN3c3RktocExUV1E' // insta
           var URL2 = '1ftYnYB5_KnKkr43-SIwWrw0HUrsQjWUgq3r7EcilhDY' // tweet
 
-          Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
+          //Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
           Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
         })
       </script>
