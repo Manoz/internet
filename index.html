@@ -1,47 +1,48 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/tabletop1.3.4.js"></script>
-    <script type="text/javascript" src="js/sheetsee.js"></script>
-    <script type="text/javascript" src="js/socialbits.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Hello, Internet!</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/tabletop1.3.4.js"></script>
+        <script type="text/javascript" src="js/sheetsee.js"></script>
+        <script type="text/javascript" src="js/socialbits.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Hello, Internet! I'm Manoz</title>
+    </head>
+<body>
     <div class="container">
-      <header>
-        <h1>Hey!</h1>
-        <h3>I am Manoz and I do these things on The Internet.</h3>
-      </header>
-      <h3><a href="https://www.twitter.com/Manoz" target="_blank">twitter/Manoz</a></h3>
-      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
-      <!-- <h3><a href="" target="_blank">instagram/manoz_</a></h3>
-      <article id="instagram"><span class="load flash animated">LOADING...</span></article> -->
+        <header>
+            <h1>Hey!</h1>
+            <h3>I am Manoz and I do these things on The Internet.</h3>
+        </header>
+
+        <h3><a href="https://www.twitter.com/Manoz" target="_blank">twitter/Manoz</a></h3>
+        <article id="tweet"><span class="load flash animated">LOADING...</span></article>
+        <h3><a href="https://www.instagram.com/manoz_" target="_blank">instagram/manoz_</a></h3>
+        <article id="instagram"><span class="load flash animated">LOADING...</span></article>
     </div>
 
-    <!-- <script id="instagram" type="text/html">
-      {{#rows}}
-        <div class="one-gram"><img src="{{instasource}}" width="200"></div>
-      {{/rows}}
-    </script> -->
-
-    <script id="tweet" type="text/html">
-      {{#rows}}
-        <span class="meta">{{date}}</span>
-        <p>{{{tweet}}}</p>
-      {{/rows}}
+    <script id="instagram" type="text/html">
+        {{#rows}}
+            <div class="one-gram"><img src="{{instasource}}" width="200"></div>
+        {{/rows}}
     </script>
 
-      <script type="text/javascript">
+    <script id="tweet" type="text/html">
+        {{#rows}}
+            <span class="meta">{{date}}</span>
+            <p>{{{tweet}}}</p>
+        {{/rows}}
+    </script>
+
+    <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
-          var URL  = '0Ao5u1U6KYND7dG9CRWdjeVB6dGYyN3c3RktocExUV1E' // insta
-          var URL2 = '1ftYnYB5_KnKkr43-SIwWrw0HUrsQjWUgq3r7EcilhDY' // tweet
+            var URL  = '1hvrrsombBhUaFe0jaCPtIJOuDv6fbvdmw2XYJuyRcsw' // insta
+            var URL2 = '1ftYnYB5_KnKkr43-SIwWrw0HUrsQjWUgq3r7EcilhDY' // tweet
 
-          //Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
-          Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
+            Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
+            Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
         })
-      </script>
+    </script>
 
-  </body>
+</body>
 </html>
